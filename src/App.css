@@ -2,4 +2,37 @@
 
 @theme {  
   --color-purple: #E93EFA;
+  --color-darkGreen: #0E251D;
+  --color-green: #DEF2EB;
+  --color-candy: #C43665;
+  --color-sea: #33AEC7;
+
+  --text-xl: 5rem;
+  --text-md: 2rem;
+  --text-sm: 1.5rem;
+
+  --font-hd: "Abril Fatface", serif;
+  --font-p: "Jost", sans-serif;
+  --font-weight: 300;
+}
+
+:root {
+  background-color: var(--color-darkGreen);
+  color: var(--color-green)
+}
+
+@layer base {
+  h1 {
+    font-family: var(--font-hd);
+    font-size: var(--font-xl);
+  }
+  h2 {
+    color: var(--color-candy);
+    text-decoration: overline;
+    font-size: var(--text-md);
+  }
+  p{
+    font-family: var(--font-p);
+    font-size: var(--text-sm);
+  }
 }
